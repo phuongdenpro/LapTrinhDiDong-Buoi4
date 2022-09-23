@@ -37,9 +37,19 @@ const App = () => {
                 <View style={styles.icon}>
                   <Text style={[{ color: "#000000", fontSize: 13 }]}>+</Text>
                 </View>
-
               </TouchableOpacity>
-              <Text style={[{marginLeft:90, color:'#134FEC', fontFamily:'Roboto',fontWeight:'bold'}]}>Mua sau</Text>
+              <Text
+                style={[
+                  {
+                    marginLeft: 90,
+                    color: "#134FEC",
+                    fontFamily: "Roboto",
+                    fontWeight: "bold",
+                  },
+                ]}
+              >
+                Mua sau
+              </Text>
             </View>
           </View>
         </View>
@@ -57,13 +67,21 @@ const App = () => {
               <TextInput
                 style={[
                   {
+                    textAlign: "center",
                     borderWidth: 1,
                     borderRadius: 5,
                     padding: 10,
                     width: "100%",
+                    color: "#011627",
+                    fontFamily: "Roboto",
+                    fontSize: 18,
+                    fontWeight: "bold",
                   },
                 ]}
+                editable={false}
+                selectTextOnFocus={false}
               >
+
                 Mã giảm giá
               </TextInput>
             </View>
@@ -219,7 +237,7 @@ const App = () => {
       <StatusBar style="auto" />
     </View>
   );
-}
+};
 export default App;
 const styles = StyleSheet.create({
   container: {
@@ -271,7 +289,7 @@ const styles = StyleSheet.create({
   Top2Text: {
     flex: 1,
     flexDirection: "row",
-    marginTop:10
+    marginTop: 10,
   },
   Top2ButtonText: {
     flex: 2,
